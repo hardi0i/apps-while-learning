@@ -1,0 +1,1 @@
+ /Users/margaritatsygankovasmm-specialist/Fork/apps-while-learning/hotel_training_app/.dart_tool/flutter_build/7766f49c4aab2927ec416d334c2df00f/native_assets.yaml: 

@@ -1,0 +1,90 @@
+{
+    "@@locale": "en",
+
+    "moreAboutTheRoom":"More about the room",
+    "chooseANumber":"Choose a number",
+
+    "mostNecessary":"The most necessary",
+    "whatIsIncluded":"What is included",
+
+    "conveniences":"Conveniences",
+    "aboutTheHotel":"About the hotel",
+
+    "toChooseARoom":"To choose a room",
+    "hotel":"Hotel",
+
+    "fromNRub":"from {amount} ₽",
+    "@fromNRub":{
+        "description": "A message with a single parameter",
+        "placeholders": {
+         "amount": {
+            "type": "String",
+            "example": "Bob"
+            }
+        }
+    },
+
+    "informationAboutTheBuyer":"Information about the buyer",
+    "phoneNumber":"Phone number",
+    "eMail":"E-Mail",
+    "securityInformation":"This data is not shared with anyone. After payment, we will send the receipt to the number and email you specified",
+    "maximumNumberOfTouristsForReservation":"The maximum number of tourists for 1 booking has been reached",
+
+    "departureFrom":"Departure from",
+    "countryCity":"Country, city",
+    "dates":"Dates",
+    "numberOfNights":"Number of nights",
+    "room":"Room",
+    "nutrition":"Nutrition",
+    "addATourist":"Add a tourist",
+
+    "tour":"Tour",
+    "fuelFee":"Fuel fee",
+    "serviceFee":"Service fee",
+    "toBePaid":"To be paid",
+
+    "booking":"Booking",
+
+    "payNRub":"To pay {amount} ₽",
+    "@payNRub":{
+        "description": "A message with a single parameter",
+        "placeholders": {
+         "amount": {
+            "type": "String",
+            "example": "Bob"
+            }
+        }
+    },
+
+    "labelTextForName":"Name",
+    "labelTextForSurname":"Surname",
+    "labelTextForBirthdate":"Birthdate",
+    "hintTextForBirthdate":"DD.MM.YYYY",
+    "labelTextForCitizenship":"Citizenship",
+    "labelForPassportNubmer":"Passport number",
+    "labelForPassportEndsDate":"The validity period of the passport",
+    "hintTextForPassportEndsDate":"MM.YYYY",
+    "firstTourist":"First tourist",
+    "secondTourist":"Second tourist",
+    "thirdTourist": "Third tourist",
+    "fourthTourist":"Fourth tourist",
+    "tooManyTourists":"Too many tourists" ,
+
+    "orderHasBeenPaid":"The order has been paid",
+    "yourOrderHasBeenAccepted":"Your order has been accepted",
+    "orderConfirmationInformation":"Order confirmation No.{nubmerOfOrder} may take some time (from 1 hour to a day). As soon as we receive a response from the tour operator, a notification will be sent to your email.",
+    "@orderConfirmationInformation":{
+        "description": "A message with a single parameter",
+        "placeholders": {
+         "nubmerOfOrder": {
+            "type": "String",
+            "example": "Bob"
+            }
+        }
+    },
+    "great":"Super!",
+
+    "houstonWeDontSeeYou":"Houston, we don't see you",
+    "problemsWithMobileInternetOrWiFi":"Apparently, you have problems with mobile Internet or Wi-Fi",
+    "close":"Close"
+}

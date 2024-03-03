@@ -1,0 +1,92 @@
+{
+    "@@locale": "ru",
+    
+    "moreAboutTheRoom":"Подробнее о номере",
+    "chooseANumber":"Выбрать номер",
+
+    "mostNecessary":"Самое необходимое",
+    "whatIsIncluded":"Что включено",
+
+    "conveniences":"Удобства",
+    "aboutTheHotel":"Об отеле",
+
+    "toChooseARoom":"К выбору номера",
+    "hotel":"Отель",
+
+    "fromNRub":"от {amount} ₽",
+    "@fromNRub":{
+        "description": "A message with a single parameter",
+        "placeholders": {
+         "amount": {
+            "type": "String",
+            "example": "Bob"
+            }
+        }
+    },
+
+    "informationAboutTheBuyer":"Информация о покупателе",
+    "phoneNumber":"Номер телефона",
+    "eMail":"Почта",
+    "securityInformation":"Эти данные никому не передаются. После оплаты мы вышлем чек на указанный вами номер и почту",
+    "maximumNumberOfTouristsForReservation":"Достигнуто максимальное количество туристов для 1 бронирования",
+
+    "departureFrom":"Вылет из",
+    "countryCity":"Страна, город",
+    "dates":"Даты",
+    "numberOfNights":"Кол-во ночей",
+    "room":"Номер",
+    "nutrition":"Питание",
+    "addATourist":"Добавить туриста",
+
+    "tour":"Тур",
+    "fuelFee":"Топливный сбор",
+    "serviceFee":"Сервисный сбор",
+    "toBePaid":"К оплате",
+
+    "booking":"Бронирование",
+
+    "payNRub":"Оплатить {amount} ₽",
+    "@payNRub":{
+        "description": "A message with a single parameter",
+        "placeholders": {
+         "amount": {
+            "type": "String",
+            "example": "Bob"
+            }
+        }
+    },
+
+    "labelTextForName":"Имя",
+    "labelTextForSurname":"Фамилия",
+    "labelTextForBirthdate":"Дата рождения",
+    "hintTextForBirthdate":"ДД.ММ.ГГГГ",
+    "labelTextForCitizenship":"Гражданство",
+    "labelForPassportNubmer":"Номер загранпаспорта",
+    "labelForPassportEndsDate":"Срок действия загранпаспорта",
+    "hintTextForPassportEndsDate":"ММ.ГГГГ",
+    "firstTourist":"Первый турист",
+    "secondTourist":"Второй турист",
+    "thirdTourist": "Третий турист",
+    "fourthTourist":"Четвертый турист",
+    "tooManyTourists":"Слишком много туристов" ,
+
+    "orderHasBeenPaid":"Заказ оплачен",
+    "yourOrderHasBeenAccepted":"Ваш заказ принят в работу",
+    "orderConfirmationInformation":"Подтверждение заказа №{nubmerOfOrder} может занять некоторое время (от 1 часа до суток). Как только мы получим ответ от туроператора, вам на почту придет уведомление.",
+    "@orderConfirmationInformation":{
+        "description": "A message with a single parameter",
+        "placeholders": {
+         "nubmerOfOrder": {
+            "type": "String",
+            "example": "Bob"
+            }
+        }
+    },
+    "great":"Супер!",
+
+    "houstonWeDontSeeYou":"Хьюстон, не видим вас",
+    "problemsWithMobileInternetOrWiFi":"Судя по всему, у вас проблемы с мобильным интернетом или Wi-Fi",
+    "close":"Закрыть"
+    
+
+}
