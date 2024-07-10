@@ -6,6 +6,8 @@ import '../providers/products.dart';
 class ProductDetailScreen extends StatelessWidget {
   static const routeName = '/product-detail';
 
+  const ProductDetailScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final productId = ModalRoute.of(
@@ -13,12 +15,14 @@ class ProductDetailScreen extends StatelessWidget {
     )!
         .settings
         .arguments as String;
+
     final loadedProduct = Provider.of<Products>(
       context,
       listen: false,
     ).findById(
       productId,
     );
+
     return SafeArea(
       child: Scaffold(
         body: CustomScrollView(
@@ -42,23 +46,23 @@ class ProductDetailScreen extends StatelessWidget {
             SliverList(
               delegate: SliverChildListDelegate(
                 [
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Text(
                     '\$${loadedProduct.price}',
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.grey,
                       fontSize: 20,
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 1000,
                   ),
                   Container(
                     width: double.infinity,
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 10,
                     ),
                     child: Text(

@@ -15,9 +15,11 @@ import './providers/orders.dart';
 import './providers/auth.dart';
 import './helpers/custom_route.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -84,7 +86,8 @@ class MyApp extends StatelessWidget {
             routes: {
               ProductsOverviewScreen.routeName: (context) =>
                   ProductsOverviewScreen(),
-              ProductDetailScreen.routeName: (context) => ProductDetailScreen(),
+              ProductDetailScreen.routeName: (context) =>
+                  const ProductDetailScreen(),
               CartScreen.routeName: (context) => CartScreen(),
               OrdersScreen.routeName: (context) => OrdersScreen(),
               UserProductScreen.routeName: (context) => UserProductScreen(),

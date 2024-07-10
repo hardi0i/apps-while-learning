@@ -26,24 +26,6 @@ class ProductItem extends StatelessWidget {
         15.0,
       ),
       child: GridTile(
-        child: GestureDetector(
-          onTap: () => Navigator.of(context).pushNamed(
-            ProductDetailScreen.routeName,
-            arguments: product.id,
-          ),
-          child: Hero(
-            tag: product.id as Object,
-            child: FadeInImage(
-              placeholder: AssetImage(
-                'assets/images/product-placeholder.png',
-              ),
-              image: NetworkImage(
-                product.imageUrl,
-              ),
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
         footer: GridTileBar(
           backgroundColor: Colors.black87,
           leading: Consumer<Product>(
@@ -72,7 +54,7 @@ class ProductItem extends StatelessWidget {
           ),
           trailing: IconButton(
             color: Theme.of(context).colorScheme.secondary,
-            icon: Icon(
+            icon: const Icon(
               Icons.shopping_bag,
             ),
             onPressed: () {
@@ -82,6 +64,7 @@ class ProductItem extends StatelessWidget {
                 product.price,
               );
               ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   duration: Duration(seconds: 2),
@@ -97,6 +80,24 @@ class ProductItem extends StatelessWidget {
                 ),
               );
             },
+          ),
+        ),
+        child: GestureDetector(
+          onTap: () => Navigator.of(context).pushNamed(
+            ProductDetailScreen.routeName,
+            arguments: product.id,
+          ),
+          child: Hero(
+            tag: product.id as Object,
+            child: FadeInImage(
+              placeholder: const AssetImage(
+                'assets/images/product-placeholder.png',
+              ),
+              image: NetworkImage(
+                product.imageUrl,
+              ),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),
