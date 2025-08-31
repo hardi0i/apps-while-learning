@@ -25,7 +25,7 @@ class TransactionItem extends StatelessWidget {
               child: FittedBox(child: Text('\$ ${transaction.amount}'))),
         ),
         title: Text(transaction.title,
-            style: Theme.of(context).textTheme.headline6),
+            style: Theme.of(context).textTheme.headlineMedium),
         subtitle: Text(
           DateFormat.yMMMd().add_Hm().format(transaction.date),
         ),
@@ -33,14 +33,14 @@ class TransactionItem extends StatelessWidget {
             ? TextButton.icon(
                 onPressed: () => deleteTx(transaction.id),
                 style: TextButton.styleFrom(
-                  foregroundColor: Theme.of(context).errorColor,
+                  foregroundColor: Colors.red,
                 ),
                 icon: const Icon(Icons.delete),
                 label: const Text('Delete'),
               )
             : IconButton(
                 icon: const Icon(Icons.delete),
-                color: Theme.of(context).errorColor,
+                color: Colors.red,
                 onPressed: () => deleteTx(transaction.id),
               ),
       ),

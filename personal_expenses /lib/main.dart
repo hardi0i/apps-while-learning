@@ -23,11 +23,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.indigo,
         fontFamily: 'Quicksand',
         textTheme: ThemeData.light().textTheme.copyWith(
-              headline6: TextStyle(
+              headlineMedium: TextStyle(
                   fontFamily: 'OpenSans',
                   fontWeight: FontWeight.bold,
                   fontSize: 18),
-              button: TextStyle(color: Colors.white),
             ),
         appBarTheme: AppBarTheme(
           titleTextStyle: TextStyle(
@@ -89,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Show Chart', style: Theme.of(context).textTheme.headline6),
+          Text('Show Chart', style: Theme.of(context).textTheme.headlineMedium),
           Switch.adaptive(
             activeColor: Theme.of(context).cardColor,
             value: _showChart,

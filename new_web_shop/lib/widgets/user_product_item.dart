@@ -9,11 +9,7 @@ class UserProductItem extends StatelessWidget {
   final String imageUrl;
   final String id;
 
-  UserProductItem(
-    this.id,
-    this.title,
-    this.imageUrl,
-  );
+  const UserProductItem(this.id, this.title, this.imageUrl, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,12 +43,10 @@ class UserProductItem extends StatelessWidget {
                   await Provider.of<Products>(
                     context,
                     listen: false,
-                  ).deleteProduct(
-                    id,
-                  );
+                  ).deleteProduct(id);
                 } catch (error) {
                   scaffold.showSnackBar(
-                    SnackBar(
+                    const SnackBar(
                       content: Text(
                         'Deleting failed!',
                         textAlign: TextAlign.center,
@@ -61,10 +55,10 @@ class UserProductItem extends StatelessWidget {
                   );
                 }
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.delete,
               ),
-              color: Theme.of(context).errorColor,
+              color: Colors.red,
             ),
           ],
         ),

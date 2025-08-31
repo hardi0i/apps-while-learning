@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             primarySwatch: Colors.cyan,
-            backgroundColor: Colors.cyan,
+            scaffoldBackgroundColor: Colors.cyan,
             colorScheme: ColorScheme.fromSwatch(
               primarySwatch: Colors.cyan,
             ).copyWith(

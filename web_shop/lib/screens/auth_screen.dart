@@ -74,7 +74,7 @@ class AuthScreen extends StatelessWidget {
                       child: Text(
                         'MyShop',
                         style: TextStyle(
-                          color: Theme.of(context).textTheme.headline6!.color,
+                          color: Theme.of(context).textTheme.titleLarge!.color,
                           fontSize: 50,
                           fontFamily: 'Anton',
                           fontWeight: FontWeight.normal,
@@ -328,7 +328,10 @@ class _AuthCardState extends State<AuthCard>
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Theme.of(context).primaryColor,
                       textStyle: TextStyle(
-                        color: Theme.of(context).primaryTextTheme.button!.color,
+                        color: Theme.of(context)
+                            .primaryTextTheme
+                            .labelLarge!
+                            .color,
                       ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30),

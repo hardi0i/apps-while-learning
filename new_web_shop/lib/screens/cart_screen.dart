@@ -8,6 +8,8 @@ import '../widgets/cart_item.dart';
 class CartScreen extends StatelessWidget {
   static const routeName = '/cart';
 
+  const CartScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final cart = Provider.of<Cart>(
@@ -43,10 +45,6 @@ class CartScreen extends StatelessWidget {
                   Chip(
                     label: Text(
                       '\$${cart.totalAmount.toStringAsFixed(2)}',
-                      style: TextStyle(
-                        color:
-                            Theme.of(context).primaryTextTheme.headline6!.color,
-                      ),
                     ),
                     backgroundColor: Theme.of(context).colorScheme.secondary,
                   ),
@@ -81,9 +79,7 @@ class CartScreen extends StatelessWidget {
 }
 
 class OrderButton extends StatefulWidget {
-  const OrderButton({
-    required this.cart,
-  });
+  const OrderButton({super.key, required this.cart});
 
   final Cart cart;
 
@@ -119,16 +115,16 @@ class _OrderButtonState extends State<OrderButton> {
               );
               widget.cart.clear();
             },
-      child: _isLoading
-          ? CircularProgressIndicator()
-          : const Text(
-              'ORDER NOW',
-            ),
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all(
+        foregroundColor: WidgetStateProperty.all(
           Theme.of(context).colorScheme.primary,
         ),
       ),
+      child: _isLoading
+          ? const CircularProgressIndicator()
+          : const Text(
+              'ORDER NOW',
+            ),
     );
   }
 }

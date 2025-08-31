@@ -10,7 +10,8 @@ class CartItem extends StatelessWidget {
   final double price;
   final int quantity;
 
-  CartItem({
+  const CartItem({
+    super.key,
     required this.id,
     required this.productId,
     required this.price,
@@ -49,30 +50,24 @@ class CartItem extends StatelessWidget {
                 child: const Text(
                   'Yes',
                 ),
-                onPressed: () {
-                  Navigator.of(ctx).pop(
-                    true,
-                  );
-                },
+                onPressed: () => Navigator.of(ctx).pop(true),
               ),
             ],
           ),
         );
       },
       background: Container(
-        color: Theme.of(context).errorColor,
-        child: Icon(
-          Icons.delete,
-          color: Colors.white,
-          size: 40,
-        ),
+        color: Colors.red,
         alignment: Alignment.centerRight,
-        padding: const EdgeInsets.only(
-          right: 20,
-        ),
+        padding: const EdgeInsets.only(right: 20),
         margin: const EdgeInsets.symmetric(
           horizontal: 15,
           vertical: 4,
+        ),
+        child: const Icon(
+          Icons.delete,
+          color: Colors.white,
+          size: 40,
         ),
       ),
       direction: DismissDirection.endToStart,

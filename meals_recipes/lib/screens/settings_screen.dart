@@ -78,7 +78,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             child: Text(
               'Ajust your meal selection',
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
           ),
           Expanded(

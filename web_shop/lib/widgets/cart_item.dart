@@ -60,7 +60,7 @@ class CartItem extends StatelessWidget {
         );
       },
       background: Container(
-        color: Theme.of(context).errorColor,
+        color: Theme.of(context).colorScheme.error,
         child: Icon(
           Icons.delete,
           color: Colors.white,

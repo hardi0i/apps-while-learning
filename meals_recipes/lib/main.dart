@@ -99,7 +99,7 @@ class _MyAppState extends State<MyApp> {
         ),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-              bodyText1: TextStyle(
+              bodyLarge: TextStyle(
                 color: Color.fromRGBO(
                   20,
                   51,
@@ -107,7 +107,7 @@ class _MyAppState extends State<MyApp> {
                   1,
                 ),
               ),
-              bodyText2: TextStyle(
+              bodyMedium: TextStyle(
                 color: Color.fromRGBO(
                   20,
                   51,
@@ -115,7 +115,7 @@ class _MyAppState extends State<MyApp> {
                   1,
                 ),
               ),
-              headline6: TextStyle(
+              headlineLarge: TextStyle(
                 fontSize: 20,
                 fontFamily: 'RobotoCondensed',
                 fontWeight: FontWeight.bold,

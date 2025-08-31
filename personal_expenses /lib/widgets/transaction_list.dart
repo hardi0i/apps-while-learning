@@ -14,7 +14,7 @@ class TransactionList extends StatelessWidget {
             return Column(
               children: [
                 Text('No transactions added yet!',
-                    style: Theme.of(context).textTheme.headline6),
+                    style: Theme.of(context).textTheme.headlineMedium),
                 const SizedBox(height: 20),
                 Container(
                   height: constraints.maxHeight * 0.7,
